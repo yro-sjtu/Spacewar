@@ -1,0 +1,28 @@
+.main {
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px solid yellow;
+}
+
+.card1 {
+	padding: 10px;
+}
+
+.card2 {
+	padding: 10px;
+	text-align: center;
+}
+
+.operate {
+	background-color: #d3d3d3;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#msg {
+	color: red;
+}
+
+.instruction {
+	text-align: left;
+}

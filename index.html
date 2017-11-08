@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset='utf-8'>
+		<meta name="author" content="Hongcheng Huang">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		 <table class="main">
+		    <tr> 
+		        <td class="card1">
+			     	<div>
+						<canvas id="canvas"></canvas>
+					</div>
+		        </td>
+ 				<td class="card2">
+		            <h1>Space War</h1>
+
+		            <hr>
+
+		            <p class="instruction">
+		            	Instructions: <br>
+		            	(1) choose a difficulty level <br>
+		            	(2) press button "Start" to start the game <br>
+		            	(3) hover over "Thrust", "Rotate" to change position <br>
+		            	(4) click on "Shoot" to launch missiles
+		            </p>
+		            <hr>
+
+		            <form role="form">
+  						<div class="form-group">
+			    			<label>Choose a difficulty level:</label>
+							<select id="level">
+							  <option>Easy</option>
+							  <option>Medium</option>
+							  <option>Hard</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="button" id="startBtn" class="btn btn-primary" value="Start" />
+						</div>
+  					</form>
+
+					<hr>
+
+		            <table class="operate">
+		                <tr>
+		                    <td></td>
+		                    <td><button type="button" class="btn btn-success" id="thrust">Thrust</button> </td>
+		                    <td></td>
+		                </tr>
+		                <tr>
+		                    <td> <button type="button" class="btn btn-info" id="rcw">Rotate Clockwise</button> </td>
+		                    <td></td>
+		                    <td> <button type="button" class="btn btn-warning" id="rccw">Rotate CounterClockwise</button> </td>
+		                </tr>
+		                <tr>
+		                    <td></td>
+		                    <td><button type="button" class="btn btn-danger" id="shoot">Shoot</button></td>
+		                    <td></td>
+            			</tr>
+        			</table>
+        			
+        			<hr>
+        			<div>
+        				Lives: <span id="lives">10</span><br>
+        				Score: <span id="score">0</span><br>
+        				Shooting Accuracy: <span id="accuracy">0/0</span><br>
+        			</div>
+
+        			<hr>
+    				<div id="msg">
+		                <p></p>
+    				</div>
+
+	    			<hr>
+		            Best Score: <span id="bestScore">No record available yet</span><br>
+		            Maximum Shot Count: <span id="maxShotCount">No record available yet</span><br>
+		        </td>
+		    </tr>
+    	<table>
+	</body>
+	<script type="text/javascript" src="classes.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</html>
